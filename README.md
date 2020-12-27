@@ -5,7 +5,7 @@ A MIDI remote script for use with Ableton Live 10 and the KORG nanoKONTROL.
 ## Set-Up
 1. Go to Releases and download the source code. There are two versions available depending of your preference about the behaviour of the top row of buttons (toggle/momentary)
 
-2. Move the nanoKONTROLMyr folder to the MidiRemoteScript folder within your Ableton Live application folder.
+2. Extract the contents into a folder named nanoKONTROLMyr and copy it to "MIDI Remote Scripts" folder within your Ableton Live application folder (C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts on Windows).
 
 3. Open your Korg nano series editor and load the preset within the NanoKontrol Presets folder, over-writing your previous settings.
 
