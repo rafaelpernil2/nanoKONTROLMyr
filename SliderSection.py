@@ -68,7 +68,8 @@ class SliderSection:
             button_index = list(NANOKONTROL_BUTTONS).index(cc_no)
             if (cc_no == NANOKONTROL_BUT9):
                 self._SliderSection__mod_pressed = (cc_value == 127)
-            elif (button_index in range(8)) and (not channel == 15):
+            # Remove and "(cc_value == 127)" for toggle usage
+            elif (button_index in range(8)) and (not channel == 15) and (cc_value == 127):
                 track_index = (button_index + (8 * channel))
                 if (len(self._SliderSection__parent.song().tracks) > track_index):
                     track = self._SliderSection__parent.song().tracks[track_index]
