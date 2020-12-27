@@ -40,7 +40,7 @@ class SliderSection:
         feedback_rule.cc_value_map = tuple()
         feedback_rule.delay_in_ms = -1.0
         for channel in range(16):
-            MidiMap.map_midi_cc_with_feedback_map(midi_map_handle, self._SliderSection__parent.song().master_track.mixer_device.volume, channel, NANOKONTROL_SLI9, MidiMap.MapMode.absolute_14_bit, feedback_rule, 1)
+            MidiMap.map_midi_cc_with_feedback_map(midi_map_handle, self._SliderSection__parent.song().master_track.mixer_device.volume, channel, NANOKONTROL_SLI9, MidiMap.MapMode.absolute, feedback_rule, 1)
 
         for channel in range(4):
             MidiMap.forward_midi_cc(script_handle, midi_map_handle, channel, NANOKONTROL_BUT9)
@@ -51,7 +51,7 @@ class SliderSection:
                     feedback_rule.cc_no = NANOKONTROL_SLIDERS[slider]
                     feedback_rule.cc_value_map = tuple()
                     feedback_rule.delay_in_ms = -1.0
-                    MidiMap.map_midi_cc_with_feedback_map(midi_map_handle, self._SliderSection__parent.song().tracks[track_index].mixer_device.volume, channel, NANOKONTROL_SLIDERS[slider], MidiMap.MapMode.absolute_14_bit, feedback_rule, 1)
+                    MidiMap.map_midi_cc_with_feedback_map(midi_map_handle, self._SliderSection__parent.song().tracks[track_index].mixer_device.volume, channel, NANOKONTROL_SLIDERS[slider], MidiMap.MapMode.absolute, feedback_rule, 1)
                     MidiMap.forward_midi_cc(script_handle, midi_map_handle, channel, NANOKONTROL_BUTTONS[slider])
                 else:
                     break

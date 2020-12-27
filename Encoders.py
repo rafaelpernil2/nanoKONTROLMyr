@@ -45,7 +45,7 @@ class Encoders:
         feedback_rule.cc_value_map = tuple()
         feedback_rule.delay_in_ms = -1.0
         for channel in range(16):
-            Live.MidiMap.map_midi_cc_with_feedback_map(midi_map_handle, self._Encoders__parent.song().master_track.mixer_device.cue_volume, channel, NANOKONTROL_ENC9, Live.MidiMap.MapMode.absolute_14_bit, feedback_rule, 1)
+            Live.MidiMap.map_midi_cc_with_feedback_map(midi_map_handle, self._Encoders__parent.song().master_track.mixer_device.cue_volume, channel, NANOKONTROL_ENC9, Live.MidiMap.MapMode.absolute, feedback_rule, 1)
 
         for channel in range(4):
             for encoder in range(8):
