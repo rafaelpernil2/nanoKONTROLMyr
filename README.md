@@ -1,6 +1,6 @@
 # nanoKONTROLMyr for Ableton Live 10.1.19 and up
 
-A midi remote script for use with Ableton Live 10 and the Korg nanoKontrol.
+A MIDI remote script for use with Ableton Live 10 and the KORG nanoKONTROL.
 
 ## Set-Up
 1. Download and Unzip the file.
