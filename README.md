@@ -67,4 +67,6 @@ Button 17 = Clip View/Device View
 
 # Attributions
 
-The content of this project is developed entirely by Myralfur - james@waterworth.org.uk with exception of a minor fix developed by me, to make it compatible with newer versions of Ableton Live. The original source code can be found here: https://github.com/phs/ableton-live9-remote-scripts/tree/master/nanoKontrol
+The content of this repository is based on nanoKONTROLMyr by Myralfur - james@waterworth.org.uk. Only minor changes were introduced to fix compatibility with newer versions of Ableton Live.
+
+The original source code can be found here: [Link](https://github.com/phs/ableton-live9-remote-scripts/tree/master/nanoKontrol)
