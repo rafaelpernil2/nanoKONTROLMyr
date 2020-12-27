@@ -1,6 +1,6 @@
-# nanoKONTROLMyr
+# nanoKONTROLMyr for Ableton Live 10.1.19 and up
 
-A midi remote script for use with Ableton Live 8 and the Korg nanoKontrol.
+A midi remote script for use with Ableton Live 10 and the Korg nanoKontrol.
 
 ## Set-Up
 1. Download and Unzip the file.
@@ -67,4 +67,4 @@ Button 17 = Clip View/Device View
 
 # Attributions
 
-The contents of this repository is based on nanoKONTROLMyr by Myralfur - james@waterworth.org.uk
+The content of this project is developed entirely by Myralfur - james@waterworth.org.uk with exception of a minor fix developed by me, to make it compatible with newer versions of Ableton Live. The original source code can be found here: https://github.com/phs/ableton-live9-remote-scripts/tree/master/nanoKontrol
