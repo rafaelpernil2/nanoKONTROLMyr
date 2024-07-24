@@ -20,7 +20,7 @@
 """
 
 import Live
-from consts import *
+from .consts import *
 
 class Transport:
     __module__ = __name__

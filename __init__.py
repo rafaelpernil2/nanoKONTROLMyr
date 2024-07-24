@@ -19,7 +19,7 @@
 # Myralfur <james@waterworth.org.uk>
 """
 
-from NanoKontrol import NanoKontrol
+from .NanoKontrol import NanoKontrol
 
 def create_instance(c_instance):
     return NanoKontrol(c_instance)
