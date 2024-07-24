@@ -1,6 +1,6 @@
 # nanoKONTROLMyr for Ableton Live 11 and up
 
-A MIDI remote script for use with Ableton Live 11 and the KORG nanoKONTROL. Tested with Ableton Live 12.0.10
+A MIDI remote script for use with Ableton Live 11+ and the KORG nanoKONTROL. Tested with Ableton Live 12.0.10
 
 ## Set-Up
 1. Go to Releases and download the source code. There are two versions available depending of your preference about the behaviour of the top row of buttons (toggle/momentary)
