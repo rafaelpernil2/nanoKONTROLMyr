@@ -20,7 +20,7 @@
 """
 
 import Live
-from consts import *
+from .consts import *
 
 class Pads:
     __module__ = __name__
@@ -32,7 +32,7 @@ class Pads:
         self._Pads__view = 0
 
     def tuple_idx(self, tuple, obj):
-        for i in xrange(0,len(tuple)):
+        for i in range(0,len(tuple)):
             if (tuple[i] == obj):
                 return i
 

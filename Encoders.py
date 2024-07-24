@@ -20,7 +20,7 @@
 """
 
 import Live
-from consts import *
+from .consts import *
 from _Generic.Devices import *
 
 class Encoders:
@@ -80,7 +80,7 @@ class Encoders:
             device_parameters = self._Encoders__selected_device.parameters
             device_bank = 0
             param_bank = 0
-            if (self._Encoders__selected_device.class_name in DEVICE_DICT.keys()):
+            if (self._Encoders__selected_device.class_name in list(DEVICE_DICT.keys())):
                 device_bank = DEVICE_DICT[self._Encoders__selected_device.class_name]
                 if (len(device_bank) > self._Encoders__bank):
                     param_bank = device_bank[self._Encoders__bank]
@@ -89,9 +89,9 @@ class Encoders:
             if assignment_necessary:
                 if self._Encoders__show_bank:
                     self._Encoders__show_bank = False
-                    if (self._Encoders__selected_device.class_name in DEVICE_DICT.keys()):
+                    if (self._Encoders__selected_device.class_name in list(DEVICE_DICT.keys())):
                         if (len(list(DEVICE_DICT[self._Encoders__selected_device.class_name])) > 1):
-                            if (self._Encoders__selected_device.class_name in BANK_NAME_DICT.keys()):
+                            if (self._Encoders__selected_device.class_name in list(BANK_NAME_DICT.keys())):
                                 bank_names = BANK_NAME_DICT[self._Encoders__selected_device.class_name]
                                 if (bank_names and (len(bank_names) > self._Encoders__bank)):
                                     bank_name = bank_names[self._Encoders__bank]

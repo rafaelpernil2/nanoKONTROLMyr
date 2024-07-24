@@ -19,11 +19,11 @@
 # Myralfur <james@waterworth.org.uk>
 """
 
-from consts import *
-from Transport import Transport
-from Pads import Pads
-from Encoders import Encoders
-from SliderSection import SliderSection
+from .consts import *
+from .Transport import Transport
+from .Pads import Pads
+from .Encoders import Encoders
+from .SliderSection import SliderSection
 import Live
 import MidiRemoteScript
 
@@ -144,7 +144,7 @@ class NanoKontrol:
     Which means that when you are not forwarding MIDI, nor mapping parameters, you will 
     never get any MIDI messages at all.
     """
-        print 'Midi Map reloaded'
+        print('Midi Map reloaded')
         script_handle = self._NanoKontrol__c_instance.handle()
         self._NanoKontrol__transport_unit.build_midi_map(script_handle, midi_map_handle)
         self._NanoKontrol__encoder_unit.build_midi_map(script_handle, midi_map_handle)
